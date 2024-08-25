@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="flex justify-center items-center min-h-screen bg-[#6B63F6]" id="here">
+    <div class="flex justify-center" id="div">
+        <div class="bg-[#eeeefd] px-24 pb-20 pt-8 rounded-lg">
+            <h3 class="uppercase text-center mb-10 text-[#2B3568] font-['Inter'] font-bold text-xl">Bmi Calculator</h3>
+
+            <div class="grid grid-cols-2 gap-10">
+                <div class="bg-[#FFFFFF] rounded-md py-5 shadow-sm">
+                    <h1 class="text-center font-['Inter'] font-medium text-[#2B3568]">Age</h1>
+                    <h3 id="Age" class="text-center text-6xl font-['Inter'] text-[#6B63F6] font-bold"></h3>
+                    <div class="flex justify-center ">
+                        <button id="-Age"
+                            class="bg-[#0C1850] w-8 rounded-full text-white mr-5 font-['Inter'] text-2xl">-</button>
+                        <button id="+Age"
+                            class="bg-[#0C1850] w-8 rounded-full text-white font-['Inter'] text-2xl">+</button>
+                    </div>
+                </div>
+                <div class="bg-[#FFFFFF] rounded-md py-5 shadow-sm">
+                    <h1 class="text-center font-['Inter'] font-medium text-[#2B3568]">Weight (KG)</h1>
+                    <h3 id="Weight" class="text-center text-6xl font-['Inter'] text-[#6B63F6] font-bold"></h3>
+                    <div class="flex justify-center ">
+                        <button id="-Weight"
+                            class="bg-[#0C1850] w-8 rounded-full text-white mr-5 font-['Inter'] text-2xl">-</button>
+                        <button id="+Weight"
+                            class="bg-[#0C1850] w-8 rounded-full text-white  font-['Inter'] text-2xl">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-md mt-5 shadow-sm py-5">
+                <h3 class="text-center font-['Inter'] font-medium text-[#2B3568]">Height (CM)</h3>
+                <h3 id="range" class="text-center text-6xl font-['Inter'] text-[#6B63F6] font-bold">0</h3>
+                <input type="range" name="cm" id="cm" min="0" max="1000" class="mx-40 accent-[#6B63F6]">
+            </div>
+            <div class="flex justify-center space-x-2 mt-5 bg-[#FFFFFF] py-5 shadow-sm">
+
+                <input type="radio" value="Female" name="Gender" class="accent-[#6B63F6] w-5">
+                <label for="Female" class="text-center font-['Inter'] font-medium text-[#2B3568] pr-16">Female</label>
+                <input type="radio" value="Male" name="Gender" class="accent-[#6B63F6] w-5 ">
+                <label for="Male" class="text-center font-['Inter'] font-medium text-[#2B3568]">Male</label>
+
+            </div>
+            <div class="flex justify-center mt-10">
+                <button id="cal"
+                    class=" bg-[#6D63FF] rounded-2xl py-3 px-40 font-['Inter'] font-semibold text-white">Calculate
+                    BMI</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="BMI Calculator.js"></script>
+
+</html>
